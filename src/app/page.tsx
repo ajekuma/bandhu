@@ -149,19 +149,19 @@ export default function Home() {
         <FeatureSection
           title="Why Taking Right/Informed Decision is So Crucial?"
           text="In today's fast-paced world, making informed decisions is more important than ever. Whether it's about your career, education, or personal life, the choices you make can have a lasting impact. Our AI-driven platform helps you navigate these decisions with confidence."
-          image="../images/life-decision-hero.jpg"
+          image="/images/right-decision.jpg"
           alt="Career Decision"
         />
         <FeatureSection
           title="Why your support system is not the best advisor?"
           text="While friends and family can offer valuable advice, they may not always have the expertise or objectivity needed to guide you through complex decisions. Bandhu combines data-driven insights with personalized support, ensuring you receive the best possible guidance."
-          image="images/career-growth.jpg"
+          image="/images/bad-advisor.jpg"
           alt="Support System"
         />
         <FeatureSection
           title="How Bandhu Can Help You?"
           text="Bandhu is your personal decision-making assistant. We leverage advanced AI algorithms to analyze your unique situation and provide tailored recommendations. Our platform is designed to empower you with the insights you need to make the best decision for your future."
-          image="/images/career-growth.jpg"
+          image="/images/bandhu.jpg"
           alt="Bandhu Assist"
         />
       </div>

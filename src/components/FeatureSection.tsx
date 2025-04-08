@@ -37,6 +37,38 @@
 //     );
 //   }
   
+// import Image from "next/image";
+
+// interface FeatureSectionProps {
+//   title: string;
+//   text: string;
+//   image: string;
+//   alt: string;
+// }
+
+// const FeatureSection: React.FC<FeatureSectionProps> = ({ title, text, image, alt }) => {
+//   return (
+//     <div className="mb-12 text-center">
+//       <div className="w-full h-48 bg-gray-200 mb-4 mx-auto max-w-md flex items-center justify-center">
+//         <div className="relative w-32 h-32 mb-4 rounded overflow-hidden">
+//           <Image
+//             src={image}
+//             alt={alt}
+//             fill
+//             style={{ objectFit: "cover" }}
+//             sizes="(max-width: 768px) 100vw, 33vw"
+//             priority
+//           />
+//         </div>
+//       </div>
+//       <h2 className="text-2xl font-semibold mb-2 text-gray-800">{title}</h2>
+//       <p className="max-w-xl mx-auto text-gray-600">{text}</p>
+//     </div>
+//   );
+// };
+
+// export default FeatureSection;
+
 import Image from "next/image";
 
 interface FeatureSectionProps {
@@ -49,17 +81,14 @@ interface FeatureSectionProps {
 const FeatureSection: React.FC<FeatureSectionProps> = ({ title, text, image, alt }) => {
   return (
     <div className="mb-12 text-center">
-      <div className="w-full h-48 bg-gray-200 mb-4 mx-auto max-w-md flex items-center justify-center">
-        <div className="relative w-32 h-32 mb-4 rounded overflow-hidden">
-          <Image
-            src={image}
-            alt={alt}
-            fill
-            style={{ objectFit: "cover" }}
-            sizes="(max-width: 768px) 100vw, 33vw"
-            priority
-          />
-        </div>
+      <div className="w-full max-w-md h-48 bg-gray-200 mx-auto mb-4 relative overflow-hidden rounded">
+        <Image
+          src={image}
+          alt={alt}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 33vw"
+        />
       </div>
       <h2 className="text-2xl font-semibold mb-2 text-gray-800">{title}</h2>
       <p className="max-w-xl mx-auto text-gray-600">{text}</p>
@@ -68,3 +97,4 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ title, text, image, alt
 };
 
 export default FeatureSection;
+
